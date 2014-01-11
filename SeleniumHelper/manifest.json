@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Selenium helper",
+	"version": "0.1",
+	"description" : "Generates id and css selectors for selenium.",
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"content_scripts": [{
+		"matches": ["*://*/*"],
+		"js": ["content.js", "jquery-1.10.2.min.js"]
+	}],
+	"permissions": [
+		 "contextMenus"
+		,"notifications"
+	],
+	"browser_action": {
+		"name": "Selenium Helper"
+	}
+}
