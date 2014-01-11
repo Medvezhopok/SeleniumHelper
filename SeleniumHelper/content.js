@@ -90,8 +90,9 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 		var $div = $("<div />", {
 			id: 'SeleniumHelperInfo',
 			style: 	"position: fixed;" +
-					"top:0; left:0;"+
-					"border: 1px solid black;"
+					"top:0; left:0;" +
+					"border: 1px solid black;" +
+					"background-color: white;"
 		}).appendTo("body");
 		$div.html(inners.join("<br>"));
 		console.log(inners.join("\n"));
